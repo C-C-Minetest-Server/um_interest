@@ -1,0 +1,14 @@
+# Calculate interests only when the account owner is online
+# This can reduce server workload and encourage players to be online.
+um_interest.online_only (Give interests when online only) bool true
+
+# Calculate the compound interest every x seconds.
+# Set this to 0 disables interests.
+um_interest.interest_interval (Interval of calculation) int 1000
+
+# Apply addition or multiplcation to the principal.
+um_interest.interest_method (Method of calculation) enum add add,mul
+
+# The calculation parameter
+# i.e. principal + value OR principal x value
+um_interest.interest_amount (Parameter of calculation) float 5.0
